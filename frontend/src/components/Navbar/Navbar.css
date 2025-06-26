@@ -1,12 +1,21 @@
 .navbar {
-  padding: 20px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 100; /* ensures navbar stays above other content */
+  background-color: white; /* essential for sticky nav so background isn't transparent */
+  padding: 15px 6vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
+
+/* Logo section */
 .navbar .logo {
   width: 150px;
 }
+
+/* Menu items */
 .navbar-menu {
   display: flex;
   list-style: none;
@@ -14,11 +23,15 @@
   color: #49557e;
   font-size: 18px;
 }
+
+/* Right section */
 .navbar-right {
   display: flex;
   align-items: center;
   gap: 40px;
 }
+
+/* Button style */
 .navbar button {
   background: transparent;
   font-size: 16px;
@@ -33,13 +46,19 @@
   background: tomato;
   color: #fff;
 }
+
+/* Active link underline */
 .navbar .active {
   padding-bottom: 2px;
   border-bottom: 2px solid #49557e;
 }
+
+/* Menu item hover */
 .navbar li {
   cursor: pointer;
 }
+
+/* Search icon dot indicator */
 .navbar-search-icon {
   position: relative;
 }
@@ -48,7 +67,7 @@
   min-width: 10px;
   min-height: 10px;
   background-color: tomato;
-  border-radius: 5px;
+  border-radius: 50%;
   top: -8px;
   right: -8px;
 }
