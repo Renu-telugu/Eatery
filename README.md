@@ -1,8 +1,8 @@
 # 🍽 Eatery – Full-Stack Food Delivery Application
 
-**Eatery** is a production-ready food delivery web application built using the MERN stack (MongoDB, Express, React, Node). Includes a secure user checkout experience, real-time cart updates, and an admin dashboard for restaurant order and menu management.
+**Eatery** is a production-ready food delivery web application built using the MERN stack (MongoDB, Express, React, Node). It includes secure user authentication, real-time cart updates, Stripe payment integration, and a full-featured admin dashboard to manage menu items and orders.
 
-It provides a seamless experience for users to browse meals, manage carts, and place orders with secure online payments. It also includes a powerful admin dashboard to manage menu items and track orders in real-time.
+It offers a seamless experience for users to browse meals, manage carts, and place orders, while giving administrators full control over food items and order fulfillment.
 
 ---
 
@@ -50,20 +50,20 @@ It provides a seamless experience for users to browse meals, manage carts, and p
 
 Eatery offers an intuitive and responsive interface, ensuring a delightful experience across all devices.
 
-- **Diverse Menu Browse:** Explore a wide array of food items with dynamic **category filtering** (e.g., Desserts, Noodles) to quickly find what you crave.
-- **Intuitive Cart Management:** Easily add items, adjust quantities, and remove products from your cart with **real-time updates**.
-- **Secure Authentication:** Create and manage your account with **secure sign-up and login** functionalities, leveraging **JWT-based authentication**.
-- **Effortless Checkout:** Proceed to a streamlined checkout process, including delivery information input and **secure payment integration with Stripe** (test mode).
-- **Real-time Order Tracking:** Keep an eye on your order's journey with **live status updates** (e.g., Processing, Out for Delivery, Delivered) directly on your "My Orders" page.
-- **Responsive Design:** Enjoy a perfectly optimized layout on any screen size, from mobile phones to desktops.
+- **Diverse Menu Browse:** Explore a wide array of food items with dynamic **category filtering** (e.g., Desserts, Noodles).
+- **Intuitive Cart Management:** Add items, update quantities, or remove products from the cart with **real-time updates**.
+- **Secure Authentication:** Register/login securely using **JWT-based authentication**.
+- **Effortless Checkout:** Checkout with delivery information and **Stripe payment**.
+- **Real-time Order Tracking:** Track order progress in your "My Orders" page.
+- **Responsive Design:** Optimized layout for mobile, tablet, and desktop.
 
 ### 📊 Powerful Admin Dashboard
 
-The dedicated admin panel empowers restaurant owners/managers with complete control over their menu and orders.
+The dedicated admin panel empowers restaurant owners/managers with complete control.
 
-- **Comprehensive Order Management:** View all incoming orders with detailed information (customer details, delivery address, items, total price) and **update order statuses** with a single click.
-- **Dynamic Menu Management (CRUD):** Effortlessly **add new food items**, upload images, provide descriptions, set categories and prices, and **edit or delete existing menu items** in real-time.
-- **Centralized Control:** A unified dashboard for efficient day-to-day operations.
+- **Comprehensive Order Management:** View orders with customer details and update delivery status.
+- **Dynamic Menu Management:** Add/edit/delete food items with images, pricing, and category assignments.
+- **Centralized Control:** Simplified dashboard for efficient daily operations.
 
 ---
 
@@ -145,19 +145,32 @@ nodemon server.js
 ## 💼 Why This Project Stands Out
 
 - Real-world, production-ready **MERN stack** architecture
-- Includes **authentication, payments, cart management**, and **admin control**
-- Demonstrates full lifecycle of an e-commerce-style application
-- Clean, modular React code with state management
-- Scalable structure with deployment-ready configuration
-- Role-based protected routes with middleware
-- Product search & filtering
+- Role-based **protected routes** with middleware
+- Fully implemented **authentication**, **Stripe payments**, **cart management**, and **admin panel**
+- End-to-end **e-commerce application lifecycle**
+- Modular and scalable frontend/backend separation
+- Clean and responsive UI with reusable components
+- Search, filter, and real-time order tracking
 
 ---
 
 ## 🎯 Potential Enhancements
 
-- OTP or Google login integration
+- Google or OTP-based login integration
 - Push notifications for order status
 - Admin analytics dashboard with charts
+- Email confirmation for successful orders
+- File/image compression for performance optimization
 
 ---
+
+## 🧑‍💻 Author
+
+**Renu**  
+Full-Stack Developer | MERN Stack Specialist
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
